@@ -4,9 +4,9 @@ puts "I will now count my chickens:"
 #  25 plus (30 divided by 6) equals 30
 puts "Hens #{25 + 30 / 6}"
 #  100 minus ((25 multipied by 3)) modulo 4) equals 3
-# % modulus division returns remainder of division
+# % modulus division returns remainder of integer division
 # 75 % 4 returns 3
-puts "Roosters #{100.0 - 25 * 3 % 4}"
+puts "Roosters #{100 - 25 * 3 % 4}"
 
 # Onto the next stuff
 puts "Now I will count the eggs:"
@@ -14,6 +14,8 @@ puts "Now I will count the eggs:"
 # 3 plus 2 plus 1 minus 5 plus (4 modulo 2) minus (1 divided by 4) plus 6
 # 4 % 2 is zero
 # 1 / 4 returns zero (integer value cannot be between 0 and 1)
+# => I made it output a float by including a float-formatted number in the
+# => calculation, 6.75 might be closer to the right number but what is .75 egg?
 puts 3 + 2 + 1 - 5 + 4 % 2 - 1.0 / 4 + 6
 
 # More text
@@ -29,7 +31,7 @@ puts "What is 5 - 7? #{5 - 7}"
 
 # Text
 puts "Oh, that's why it's false."
-# I probably didn't need to be so literal with commenting before each line
+# I probably didn't need to be so literal about commenting above each line
 puts "How about some more?"
 
 # Inline comparison of 5 greater than -2
